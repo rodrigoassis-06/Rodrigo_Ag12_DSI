@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configuração de codificação de caracteres para suportar acentuação em português -->
+    <meta charset="UTF-8">
+    <!-- Configuração de responsividade para dispositivos móveis e desktops -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador (exigência da atividade) -->
+    <title>Meus sites favoritos</title>
+
+    <!-- Estilização CSS para organização visual em formato de cards modernos -->
+    <style>
+        /* Estilos globais da página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f2f5;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Título principal do corpo da página */
+        h1 {
+            color: #1a365d;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        /* Subtítulo explicativo com identificação do curso */
+        .subtitulo {
+            text-align: center;
+            color: #666666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        /* Container que agrupa os cards dos sites favoritos */
+        .container-sites {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+            max-width: 650px;
+        }
+
+        /* Card individual para cada site */
+        .site-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Efeito de destaque ao passar o mouse sobre o card */
+        .site-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Nome do site acima da imagem */
+        .site-card h2 {
+            margin-top: 0;
+            color: #2b6cb0;
+            font-size: 1.4rem;
+        }
+
+        /* Estilização da imagem do site */
+        .site-card img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #cbd5e0;
+            transition: opacity 0.2s;
+        }
+
+        /* Efeito de transparência sutil ao passar o cursor pela imagem */
+        .site-card img:hover {
+            opacity: 0.9;
+        }
+
+        /* Texto de fonte e créditos da imagem */
+        .fonte {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+
+        /* Estilização do link para acessar o site */
+        .site-link {
+            display: inline-block;
+            background-color: #3182ce;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Mudança de cor do botão de link ao passar o mouse */
+        .site-link:hover {
+            background-color: #2b6cb0;
+        }
+
+        /* Rodapé com identificação da atividade */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #718096;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+            width: 100%;
+            max-width: 650px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================== -->
+    <!-- TÍTULO DO CORPO DA PÁGINA (Exigência do enunciado da atividade) -->
+    <!-- ============================================================== -->
+    <h1>Meus sites favoritos: Rodrigo Assis</h1>
+    <p class="subtitulo">Agenda 12 - Desenvolvimento de Sistemas I | EAD TEC - Centro Paula Souza</p>
+
+    <!-- Container principal com os 5 sites favoritos -->
+    <div class="container-sites">
+
+        <!-- ========================================================== -->
+        <!-- SITE 1: Centro Paula Souza                                 -->
+        <!-- ========================================================== -->
+        <div class="site-card">
+            <!-- Nome do site acima da imagem -->
+            <h2>Centro Paula Souza</h2>
+            
+            <!-- Imagem do site (com link clicável na imagem - opcional cumprido) -->
+            <a href="https://www.cps.sp.gov.br" target="_blank" title="Acesse o portal do Centro Paula Souza">
+                <img src="cps.png" alt="Logo do Centro Paula Souza">
+            </a>
+            
+            <!-- Fonte da imagem -->
+            <p class="fonte">Fonte: (Centro Paula Souza, 2026)</p>
+            
+            <!-- Link do site abaixo da imagem -->
+            <a class="site-link" href="https://www.cps.sp.gov.br" target="_blank">Acessar Centro Paula Souza</a>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- SITE 2: YouTube                                            -->
+        <!-- ========================================================== -->
+        <div class="site-card">
+            <!-- Nome do site acima da imagem -->
+            <h2>YouTube</h2>
+            
+            <!-- Imagem do site (com link clicável na imagem) -->
+            <a href="https://www.youtube.com" target="_blank" title="Acesse o YouTube">
+                <img src="youtube.png" alt="Logo do YouTube">
+            </a>
+            
+            <!-- Fonte da imagem -->
+            <p class="fonte">Fonte: (YouTube, 2026)</p>
+            
+            <!-- Link do site abaixo da imagem -->
+            <a class="site-link" href="https://www.youtube.com" target="_blank">Acessar YouTube</a>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- SITE 3: GitHub                                             -->
+        <!-- ========================================================== -->
+        <div class="site-card">
+            <!-- Nome do site acima da imagem -->
+            <h2>GitHub</h2>
+            
+            <!-- Imagem do site (com link clicável na imagem) -->
+            <a href="https://github.com" target="_blank" title="Acesse o GitHub">
+                <img src="github.png" alt="Logo do GitHub">
+            </a>
+            
+            <!-- Fonte da imagem -->
+            <p class="fonte">Fonte: (GitHub, 2026)</p>
+            
+            <!-- Link do site abaixo da imagem -->
+            <a class="site-link" href="https://github.com" target="_blank">Acessar GitHub</a>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- SITE 4: Google                                             -->
+        <!-- ========================================================== -->
+        <div class="site-card">
+            <!-- Nome do site acima da imagem -->
+            <h2>Google</h2>
+            
+            <!-- Imagem do site (com link clicável na imagem) -->
+            <a href="https://www.google.com" target="_blank" title="Acesse o Google">
+                <img src="google.png" alt="Logo do Google">
+            </a>
+            
+            <!-- Fonte da imagem -->
+            <p class="fonte">Fonte: (Google, 2026)</p>
+            
+            <!-- Link do site abaixo da imagem -->
+            <a class="site-link" href="https://www.google.com" target="_blank">Acessar Google</a>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- SITE 5: Stack Overflow                                     -->
+        <!-- ========================================================== -->
+        <div class="site-card">
+            <!-- Nome do site acima da imagem -->
+            <h2>Stack Overflow</h2>
+            
+            <!-- Imagem do site (com link clicável na imagem) -->
+            <a href="https://stackoverflow.com" target="_blank" title="Acesse o Stack Overflow">
+                <img src="stackoverflow.png" alt="Logo do Stack Overflow">
+            </a>
+            
+            <!-- Fonte da imagem -->
+            <p class="fonte">Fonte: (Stack Overflow, 2026)</p>
+            
+            <!-- Link do site abaixo da imagem -->
+            <a class="site-link" href="https://stackoverflow.com" target="_blank">Acessar Stack Overflow</a>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Rodrigo Assis | Atividade Agenda 12 - DSI</p>
+    </footer>
+
+</body>
+</html>
